@@ -38,8 +38,8 @@ class zhihu_login():
         '''#前面部分代码用于填写登录信息并登录
         driver.get('https://www.zhihu.com/signin')
         time.sleep(2)
-        driver.find_element_by_xpath('//input[@type="text"][@name="username"]').send_keys('18813290955')
-        driver.find_element_by_xpath('//input[@type="password"]').send_keys('kang199544')
+        driver.find_element_by_xpath('//input[@type="text"][@name="username"]').send_keys('*****')
+        driver.find_element_by_xpath('//input[@type="password"]').send_keys('*****')
         driver.save_screenshot("login.png")
         driver.find_element_by_xpath('//button[@class="Button SignFlow-submitButton Button--primary Button--blue"]').click()
         time.sleep(2)
